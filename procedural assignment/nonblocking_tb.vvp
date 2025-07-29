@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #! /c/Source/iverilog-install/bin/vvp
 :ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
 :ivl_delay_selection "TYPICAL";
@@ -82,3 +83,89 @@ T_3 ;
     "<interactive>";
     "nonblocking_tb.v";
     "nonblocking.v";
+=======
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000026075e2d0d0 .scope module, "nonblocking_tb" "nonblocking_tb" 2 1;
+ .timescale 0 0;
+v0000026075e2bc20_0 .net "a", 31 0, v0000026075ce2b30_0;  1 drivers
+v0000026075e2bcc0_0 .net "b", 31 0, v0000026075e2b9a0_0;  1 drivers
+v0000026075e2bd60_0 .net "c", 31 0, v0000026075e2ba40_0;  1 drivers
+v0000026075e2be00_0 .var "clock", 0 0;
+v0000026075e2bea0_0 .net "d", 31 0, v0000026075e2bb80_0;  1 drivers
+S_0000026075e2d260 .scope module, "uut" "nonblocking" 2 6, 3 1 0, S_0000026075e2d0d0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 32 "a";
+    .port_info 1 /OUTPUT 32 "b";
+    .port_info 2 /OUTPUT 32 "c";
+    .port_info 3 /OUTPUT 32 "d";
+    .port_info 4 /INPUT 1 "clock";
+v0000026075ce2b30_0 .var "a", 31 0;
+v0000026075e2b9a0_0 .var "b", 31 0;
+v0000026075e2ba40_0 .var "c", 31 0;
+v0000026075e2bae0_0 .net "clock", 0 0, v0000026075e2be00_0;  1 drivers
+v0000026075e2bb80_0 .var "d", 31 0;
+E_0000026075d059b0 .event posedge, v0000026075e2bae0_0;
+    .scope S_0000026075e2d260;
+T_0 ;
+    %pushi/vec4 20, 0, 32;
+    %store/vec4 v0000026075e2b9a0_0, 0, 32;
+    %pushi/vec4 15, 0, 32;
+    %store/vec4 v0000026075e2ba40_0, 0, 32;
+    %pushi/vec4 30, 0, 32;
+    %store/vec4 v0000026075ce2b30_0, 0, 32;
+    %pushi/vec4 5, 0, 32;
+    %store/vec4 v0000026075e2bb80_0, 0, 32;
+    %end;
+    .thread T_0;
+    .scope S_0000026075e2d260;
+T_1 ;
+    %wait E_0000026075d059b0;
+    %load/vec4 v0000026075e2b9a0_0;
+    %load/vec4 v0000026075e2ba40_0;
+    %add;
+    %assign/vec4 v0000026075ce2b30_0, 0;
+    %load/vec4 v0000026075ce2b30_0;
+    %subi 3, 0, 32;
+    %assign/vec4 v0000026075e2bb80_0, 0;
+    %load/vec4 v0000026075e2bb80_0;
+    %addi 10, 0, 32;
+    %assign/vec4 v0000026075e2b9a0_0, 0;
+    %load/vec4 v0000026075e2ba40_0;
+    %addi 1, 0, 32;
+    %assign/vec4 v0000026075e2ba40_0, 0;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000026075e2d0d0;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026075e2be00_0, 0, 1;
+T_2.0 ;
+    %delay 5, 0;
+    %load/vec4 v0000026075e2be00_0;
+    %inv;
+    %store/vec4 v0000026075e2be00_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_0000026075e2d0d0;
+T_3 ;
+    %vpi_call 2 22 "$monitor", $time, " a=%4d, b=%4d, c=%4d, d=%4d", v0000026075e2bc20_0, v0000026075e2bcc0_0, v0000026075e2bd60_0, v0000026075e2bea0_0 {0 0 0};
+    %delay 100, 0;
+    %vpi_call 2 23 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "nonblocking_tb.v";
+    "nonblocking.v";
+>>>>>>> d5771bfc649faa2ad63436b77cef34935263306d

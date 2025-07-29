@@ -1,0 +1,42 @@
+$date
+	Tue May 27 16:34:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dff_negedge_tb $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$var reg 1 # Clock $end
+$var reg 1 $ D $end
+$scope module dut $end
+$var wire 1 # Clock $end
+$var wire 1 $ D $end
+$var reg 1 " Q $end
+$var reg 1 ! Qbar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+0#
+0"
+1!
+$end
+#5
+1$
+1#
+#10
+0!
+1"
+0#
+#15
+0$
+1#

@@ -1,0 +1,55 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000231df97e9c0 .scope module, "udp_tff_tb" "udp_tff_tb" 2 3;
+ .timescale 0 0;
+UDP_udp_tff .udp/sequ "udp_tff", 2, 2
+ ,"??10"
+ ,"?1f-"
+ ,"1f00"
+ ,"0f01"
+ ,"?P0-";
+L_00000231df97ef50 .udp UDP_udp_tff, v00000231df97e5f0_0, v00000231df97e690_0;
+v00000231df97e5f0_0 .var "clk", 0 0;
+v00000231df97e690_0 .var "clr", 0 0;
+v00000231dfa0bc40_0 .net "q", 0 0, L_00000231df97ef50;  1 drivers
+    .scope S_00000231df97e9c0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000231df97e5f0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_00000231df97e9c0;
+T_1 ;
+    %delay 5, 0;
+    %load/vec4 v00000231df97e5f0_0;
+    %inv;
+    %store/vec4 v00000231df97e5f0_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_00000231df97e9c0;
+T_2 ;
+    %vpi_call 2 17 "$dumpfile", "tff.vcd" {0 0 0};
+    %vpi_call 2 18 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000231df97e9c0 {0 0 0};
+    %vpi_call 2 19 "$monitor", $time, " clk=%b clr=%b q=%b", v00000231df97e5f0_0, v00000231df97e690_0, v00000231dfa0bc40_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000231df97e690_0, 0, 1;
+    %delay 7, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000231df97e690_0, 0, 1;
+    %delay 10, 0;
+    %delay 40, 0;
+    %vpi_call 2 27 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "udp_tff_tb.v";

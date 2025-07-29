@@ -1,0 +1,247 @@
+$date
+	Thu May 29 13:34:40 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module RCA_tb $end
+$var wire 8 ! sum [7:0] $end
+$var wire 1 " cout $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % cin $end
+$scope module dut $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 1 % cin $end
+$var wire 8 ( sum [7:0] $end
+$var wire 1 " cout $end
+$var wire 9 ) carry [8:0] $end
+$var parameter 32 * N $end
+$scope begin fa_loop[0] $end
+$var parameter 2 + i $end
+$scope module fa $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 1 . cin $end
+$var wire 1 / cout $end
+$var wire 1 0 sum $end
+$var wire 1 1 t1 $end
+$var wire 1 2 t2 $end
+$var wire 1 3 t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[1] $end
+$var parameter 2 4 i $end
+$scope module fa $end
+$var wire 1 5 a $end
+$var wire 1 6 b $end
+$var wire 1 7 cin $end
+$var wire 1 8 cout $end
+$var wire 1 9 sum $end
+$var wire 1 : t1 $end
+$var wire 1 ; t2 $end
+$var wire 1 < t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[2] $end
+$var parameter 3 = i $end
+$scope module fa $end
+$var wire 1 > a $end
+$var wire 1 ? b $end
+$var wire 1 @ cin $end
+$var wire 1 A cout $end
+$var wire 1 B sum $end
+$var wire 1 C t1 $end
+$var wire 1 D t2 $end
+$var wire 1 E t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[3] $end
+$var parameter 3 F i $end
+$scope module fa $end
+$var wire 1 G a $end
+$var wire 1 H b $end
+$var wire 1 I cin $end
+$var wire 1 J cout $end
+$var wire 1 K sum $end
+$var wire 1 L t1 $end
+$var wire 1 M t2 $end
+$var wire 1 N t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[4] $end
+$var parameter 4 O i $end
+$scope module fa $end
+$var wire 1 P a $end
+$var wire 1 Q b $end
+$var wire 1 R cin $end
+$var wire 1 S cout $end
+$var wire 1 T sum $end
+$var wire 1 U t1 $end
+$var wire 1 V t2 $end
+$var wire 1 W t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[5] $end
+$var parameter 4 X i $end
+$scope module fa $end
+$var wire 1 Y a $end
+$var wire 1 Z b $end
+$var wire 1 [ cin $end
+$var wire 1 \ cout $end
+$var wire 1 ] sum $end
+$var wire 1 ^ t1 $end
+$var wire 1 _ t2 $end
+$var wire 1 ` t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[6] $end
+$var parameter 4 a i $end
+$scope module fa $end
+$var wire 1 b a $end
+$var wire 1 c b $end
+$var wire 1 d cin $end
+$var wire 1 e cout $end
+$var wire 1 f sum $end
+$var wire 1 g t1 $end
+$var wire 1 h t2 $end
+$var wire 1 i t3 $end
+$upscope $end
+$upscope $end
+$scope begin fa_loop[7] $end
+$var parameter 4 j i $end
+$scope module fa $end
+$var wire 1 k a $end
+$var wire 1 l b $end
+$var wire 1 m cin $end
+$var wire 1 n cout $end
+$var wire 1 o sum $end
+$var wire 1 p t1 $end
+$var wire 1 q t2 $end
+$var wire 1 r t3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 j
+b110 a
+b101 X
+b100 O
+b11 F
+b10 =
+b1 4
+b0 +
+b1000 *
+$end
+#0
+$dumpvars
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0W
+0V
+1U
+1T
+0S
+0R
+0Q
+1P
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0<
+0;
+0:
+19
+08
+17
+06
+05
+13
+02
+11
+00
+1/
+1.
+0-
+1,
+b11 )
+b10010 (
+b0 '
+b10001 &
+1%
+b0 $
+b10001 #
+0"
+b10010 !
+$end
+#10000
+1]
+b1110010 !
+b1110010 (
+1f
+03
+01
+12
+1^
+1g
+0.
+1-
+1Y
+1b
+b10 )
+0%
+b1 $
+b1 '
+b1110001 #
+b1110001 &
+#20000
+b11110010 !
+b11110010 (
+1o
+1p
+1k
+b11110001 #
+b11110001 &
+#30000
